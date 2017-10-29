@@ -1,0 +1,49 @@
+<html>
+<head><title>AddProduct.html</title>
+<script type="text/javascript">
+function blank(){
+var str1=document.getElementById('pname').value="";
+var str2=document.getElementById('cname').value="";
+var str3=document.getElementById('ptype').value="";
+var str4=document.getElementById('btype').value="";
+var str5=document.getElementById('pdesc').value="";
+var str6=document.getElementById('cost').value="";
+}
+</script>
+</head>
+<body style="background: url('uploads/12.jpg');background-repeat: no-repeat;background-size:cover;">
+<h1 style="background-color:grey;text-align:center"><b><i>PICKnDEAL<i><b></style></h1>
+<hr>
+<h2 style="text-align:center">Admin Panel</h2></style>
+<hr>
+<form action="insert.php" enctype="multipart/form-data" method="POST">
+Product Id<input type="text" id="pid" name="pid"><br><br>
+Product Name<input type="text" id="pname" name="pname"><br><br>
+City Name<input type="text" id="cname" name="cname"><br><br>
+Product Type<select name="ptype" id="ptype">
+<option value="">Select</option>
+<option value="Mobiles">Mobiles</option>
+<option value="Electronics">Camera</option>
+<option value="Accessories">Accessories</option>
+</select><br><br>
+Brand Type<select name="btype" id="btype">
+<option value="">Select</option>
+<option value="Samsung">Samsung</option>
+<option value="Apple">Apple</option>
+<option value="Sony">Sony</option>
+<option value="Moto">Moto</option>
+<option value="Honor">Honor</option>
+<option value="Gionee">Gionee</option>
+<option value="Canon">Canon</option>
+<option value="Nikon">Nikon</option>
+</select><br><br>
+Upload Image<input type="file" name="image" multiple/><br><br>
+Product Description<input type="text" id="pdesc" name="pdesc"><br><br>
+Cost<input type="number" id="cost" name="cost"><br><br>
+<input type="submit" value="Add Product"> <!--onclick="insert.php"-->
+<button value="Reset" onclick="blank()">RESET </button>
+
+</form>
+<a href='logout.php'>Logout</a>
+</body>
+</html>
