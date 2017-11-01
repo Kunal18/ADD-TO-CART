@@ -11,22 +11,24 @@ var str6=document.getElementById('cost').value="";
 }
 </script>
 </head>
-<body style="background: url('uploads/12.jpg');background-repeat: no-repeat;background-size:cover;">
-<h1 style="background-color:grey;text-align:center"><b><i>PICKnDEAL<i><b></style></h1>
-<hr>
+<body style="background: url('uploads/whi.jpg');background-repeat: no-repeat;background-size:cover;text-align: center">
+<h1 style="text-align:center"><b>PICKnDEAL<b></style></h1>
+
 <h2 style="text-align:center">Admin Panel</h2></style>
-<hr>
-<form action="insert.php" enctype="multipart/form-data" method="POST">
-Product Id<input type="text" id="pid" name="pid"><br><br>
-Product Name<input type="text" id="pname" name="pname"><br><br>
-City Name<input type="text" id="cname" name="cname"><br><br>
-Product Type<select name="ptype" id="ptype">
+
+<pre>
+<form action="insert.php"  enctype="multipart/form-data" method="POST">
+
+Product Id 	    :<input type="text" id="pid" name="pid"><br><br>
+Product Name 	    :<input type="text" id="pname" name="pname"><br><br>
+City Name   	    :<input type="text" id="cname" name="cname"><br><br>
+Product Type        :<select name="ptype" id="ptype">
 <option value="">Select</option>
 <option value="Mobiles">Mobiles</option>
 <option value="Electronics">Camera</option>
 <option value="Accessories">Accessories</option>
 </select><br><br>
-Brand Type<select name="btype" id="btype">
+Brand Type  	    :<select name="btype" id="btype">
 <option value="">Select</option>
 <option value="Samsung">Samsung</option>
 <option value="Apple">Apple</option>
@@ -37,13 +39,14 @@ Brand Type<select name="btype" id="btype">
 <option value="Canon">Canon</option>
 <option value="Nikon">Nikon</option>
 </select><br><br>
-Upload Image<input type="file" name="image" multiple/><br><br>
-Product Description<input type="text" id="pdesc" name="pdesc"><br><br>
-Cost<input type="number" id="cost" name="cost"><br><br>
-<input type="submit" value="Add Product"> <!--onclick="insert.php"-->
-<button value="Reset" onclick="blank()">RESET </button>
+Upload Image	    :<input type="file" name="image" multiple /><br><br>
+Product Description :<input type="text" id="pdesc" name="pdesc"><br><br>
+Cost         	    :<input type="number" id="cost" name="cost"><br><br>
+<input type="submit" value="Add Product" class="btn btn-primary"> <!--onclick="insert.php"-->
+<button value="Reset" onclick="blank()" class="btn btn-primary">RESET </button>
 
 </form>
+</pre>
 <a href='logout.php'>Logout</a>
 </body>
 </html>

@@ -30,26 +30,26 @@ $(window).ready(function(){
     left: 1em;
     width: 9em }
 </style>
-<body style="background: url('uploads/10.jpg');background-repeat: no-repeat;background-size:cover; ">
-<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 50px;">
+<body style="background: url('uploads/whi.jpg');background-repeat: no-repeat;background-size:cover; ">
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse" style="margin-bottom: 50px;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">PICKnDEALS</a>
+      <a class="navbar-brand" href="index.php">PICKnDEALS</a>
     </div>
 
     <ul class="nav navbar-nav">
       <li ><a href="index.php">Home</a></li>
-      <li class="active"><a href="mycart.php">MyCart</a></li>
+      <li><a href="mycart.php">MyCart</a></li>
       
     
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Cameras</a></li>
-          <li><a href="#">Mobile</a></li>
-          <li><a href="#">Accessories</a></li>
+          <li><a href="index.php">Cameras</a></li>
+          <li><a href="index.php">Mobile</a></li>
+          <li><a href="index.php">Accessories</a></li>
         </ul>
       </li>
-      <li><a href="#">About us</a></li>
+      <li><a href="about.xml">About us</a></li>
       </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

@@ -1,12 +1,12 @@
 <?php
-$product_id=$_POST['pid'];
-$product_name=$_POST['pname'];
-$city_name=$_POST['cname'];
-$product_type=$_POST['ptype'];
-$brand_type=$_POST['btype'];
+$product_id=@$_POST['pid'];
+$product_name=@$_POST['pname'];
+$city_name=@$_POST['cname'];
+$product_type=@$_POST['ptype'];
+$brand_type=@$_POST['btype'];
 $image=$_FILES['image']['name'];
-$product_description=$_POST['pdesc'];
-$cost=$_POST['cost'];
+$product_description=@$_POST['pdesc'];
+$cost=@$_POST['cost'];
 $servername="localhost";
 $username="root";
 $password="";
@@ -15,7 +15,7 @@ $conn=mysqli_connect($servername,$username,$password,$dbname);
 if(!$conn){
 	die("Connection failed:".mysqli_connect_error());
 }
-else+
+else
 	
 {
 	//echo "Connected successfully"."<br>";

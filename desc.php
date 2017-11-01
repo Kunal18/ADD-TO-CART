@@ -3,13 +3,13 @@
 <head>
 <link rel="stylesheet" href="css/bootstrap.min.css"> 
 <script src="jquery.js"></script> <script src="js/bootstrap.min.js"></script>
-<body style="background: url('uploads/12.jpg');background-repeat: no-repeat;background-size:cover; text-align: center;">
+<body style="background: url('uploads/whi.jpg');background-repeat: no-repeat;background-size:cover; text-align: center;">
 
 <div>
 	<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 50px;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">PICKnDEALS</a>
+      <a class="navbar-brand" href="index.php">PICKnDEALS</a>
     </div>
 
     <ul class="nav navbar-nav">

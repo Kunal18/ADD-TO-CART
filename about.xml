@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rt.xsl"?>
+<contri>
+  <cd>
+    <name>Mrunal Gaikar</name>
+    <roll_no>15CE7017</roll_no>
+<ser>2</ser>
+    </cd>
+  <cd1>
+<name>kunal Indore</name>
+    <roll_no>15CE7004</roll_no>
+    <ser>5</ser>
+     </cd1>
+  <cd2>
+    <name>Kshitija Kulkarni</name>
+    <roll_no>15CE8010</roll_no> 
+<ser>14</ser>   
+  </cd2>
+  
+  
+ 
+</contri>

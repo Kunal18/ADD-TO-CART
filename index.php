@@ -1,10 +1,9 @@
+<!DOCTYPE HTML>
 <html>
 <head><title>index.php</title>
 <header>PICKnDEALS</header>
 <link rel="stylesheet" href="css/bootstrap.min.css"> 
-  <script src="jquery.js"></script> 
-  <script src="js/bootstrap.min.js">
-  </script>
+<script src="jquery.js"></script> <script src="js/bootstrap.min.js"></script>
 
   <style type="text/css">
   header{
@@ -55,12 +54,12 @@ li a:hover {
   </style>
   
 </head>
-<body style="background: url('uploads/9.jpg');background-repeat: no-repeat;background-size:cover;>
+<body style="background: url('uploads/whi.jpg');background-repeat: no-repeat;background-size:cover;">
 <h1 style="height=400px;width=400px;background-color:gainsboro;text-align:center"><b><i></i><b></style><a href='index.php'></a></h1>
-<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 50px;">
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-collapse" style="margin-bottom: 50px;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">PICKnDEALS</a>
+      <a class="navbar-brand" href="index.php">PICKnDEALS</a>
     </div>
 
     <ul class="nav navbar-nav">
@@ -68,14 +67,10 @@ li a:hover {
       <li ><a href="mycart.php">MyCart</a></li>
       
     
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Cameras</a></li>
-          <li><a href="#">Mobile</a></li>
-          <li><a href="#">Accessories</a></li>
-        </ul>
+      <li class=""><a class= href="#">Product<span class="caret"></span></a>
+        
       </li>
-      <li><a href="#">About us</a></li>
+      <li><a href="about.xml">About us</a></li>
       </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -102,7 +97,8 @@ else
 {
 //echo "Connected successfully"."<br>";
 }
-$sql="SELECT * from cart";
+
+$sql="SELECT * from cart where product_type='Mobiles'";
 $result=mysqli_query($conn,$sql);
 $rowcount=mysqli_num_rows($result);
 $count=0;
@@ -124,15 +120,61 @@ echo "</div>";
 $count++;
 }
 }
-/*if(isset($_SESSION['user_name']))
+?>
+</div>
+</div>
+
+<!--if(isset($_SESSION['user_name']))
 {
   echo "<a href='mycart.php'>"."MyCart"."</a>";
 }
-*/
+
+*/-->
+<div class="container-fluid " style="margin-top: 70px;height: auto;margin-left: 100px">
+<div class="row">
+<?php
+$servername="localhost";
+$username="root";
+$password="";
+$dbname="project1";
+$conn=mysqli_connect($servername,$username,$password,$dbname);
+if(!$conn)
+{
+  die("Connection failed:".mysqli_connect_error());
+}
+else
+{
+//echo "Connected successfully"."<br>";
+}
+
+$sql="SELECT * from cart where product_type='Electronics'";
+$result=mysqli_query($conn,$sql);
+$rowcount=mysqli_num_rows($result);
+$count=0;
+if($rowcount>0)
+{
+  while($count<$rowcount)
+  {
+  $row=mysqli_fetch_array($result);
+//echo "<div style='border:1px solid black;width:40px;height:50px'>";
+
+echo "<div class='col-xs-12 col-sm-12 col-md-3 col-lg-3' style='float:left; margin:2px;'>";
+echo "<img src='uploads/".$row['image']."'/>";
+echo "<div style='text-align:center;'>";
+echo "<a href='desc.php?product_id=".$row['product_id']."'/>";
+echo $row['product_name']."</div>";
+echo "</a>";
+echo "</div>";
+//echo "<br>";
+$count++;
+}
+}
+
 ?>
+</div>
+</div>
+
   
-</div>
-</div>
 
 
 
